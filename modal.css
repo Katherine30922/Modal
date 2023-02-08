@@ -1,0 +1,73 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1606744824163-985d376605aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.modal{
+  background-color: whitesmoke;
+  opacity: 0.9;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 800px;
+  height: 200px;
+/* centering !!!!!!!!!!!!!!!!!!!!!!! */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title{
+    padding-top: 30px;
+}
+.open{
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    color: cadetblue;
+    font-size: larger;
+    border:none;
+}
+.open:hover{
+    transition: all linear 0.3s;
+    color: rgb(75, 116, 117);
+    cursor: pointer;
+}
+.overlay{
+    visibility: hidden;
+    background-color: whitesmoke;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title2{
+    padding-top: 50px;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0,0);
+    border: none;
+    font-size: larger;
+    color: darkred;
+}
+.close:hover{
+    animation: spin 0.4s linear forwards;
+}
+.email{
+    border: solid cadetblue 2px;
+}
+@keyframes spin{
+    0%{transform: rotatez(0deg)}
+    100%{transform: rotatez(90deg)}
+}
